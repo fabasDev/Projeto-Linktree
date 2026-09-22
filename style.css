@@ -4,7 +4,13 @@
 }
 
 body {
-  background: url(./assets/imagem\ backgroung.png) no-repeat top center/cover;
+  background: url("./assets/background.webp") center / cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("./assets/background.webp");
+  }
 }
 
 body * {
@@ -35,6 +41,7 @@ body * {
 }
 
 #dev p {
+  border-color: #ffffff;
   font-size: 15px;
   color: rgb(152, 171, 223);
 }
